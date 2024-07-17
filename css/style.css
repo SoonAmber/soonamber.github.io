@@ -1,3 +1,4 @@
+@charset "utf-8";
 @font-face {
   font-family: Raleway_Medium;
   src: url("../fonts/raleway_medium/Raleway-Medium.eot");
@@ -7,7 +8,7 @@
 .font-raleway-medium {
   font-family: Raleway-Medium;
 }
-@charset "utf-8";
+
 @font-face {
   font-family: feathericon;
   font-weight: normal;
