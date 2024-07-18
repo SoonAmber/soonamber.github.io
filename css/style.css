@@ -736,7 +736,7 @@ body {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0.6em 0;
 }
 hr {
   box-sizing: content-box /* 1 */;
@@ -1002,7 +1002,7 @@ img {
 .archives ul,
 .article-entry ol,
 .archives ol {
-  padding-left: 2em;
+  padding-left: em;
 }
 .article-entry ul,
 .archives ul {
@@ -1014,8 +1014,10 @@ img {
 .archives table,
 .article-entry blockquote,
 .archives blockquote {
-  margin: 1.5rem 0;
+  margin-top: 1rem; /* 增加段落的上方间距 */
+  margin-bottom: 1rem; /* 增加段落的下方间距 */
 }
+
 .article-entry img,
 .archives img,
 .article-entry video,
@@ -2493,7 +2495,7 @@ pre .javascript .function {
 }
 .gitalk,
 .markdown-body {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 .gt-container .gt-avatar.gt-comment-avatar img {
   -webkit-border-radius: 50%;
