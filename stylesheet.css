@@ -1,0 +1,62 @@
+/* Layout adapted from https://github.com/jonbarron/jonbarron.github.io. */
+:root {
+  color-scheme: light;
+  --ink: #222;
+  --muted: #666;
+  --link: #1772d0;
+  --link-hover: #f09228;
+  --line: #e9e9e9;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 14px/1.6 Lato, Verdana, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus-visible { color: var(--link-hover); }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+img { max-width: 100%; }
+.site { width: min(100%, 800px); margin: 0 auto; padding: 0 16px 40px; }
+.profile {
+  display: grid;
+  grid-template-columns: 63% 37%;
+  align-items: center;
+  padding: 24px 0 12px;
+}
+.profile-copy { padding: 2.5%; }
+.profile h1 { margin: 0 0 12px; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.2; }
+.profile-copy > p { margin: 0 0 14px; }
+.profile-links { text-align: center; }
+.profile-links a { white-space: nowrap; }
+.profile-links .sep { color: #999; padding: 0 5px; }
+.profile-art { padding: 2.5%; text-align: center; }
+.profile-art img {
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+  margin: auto;
+  border-radius: 6px;
+  box-shadow: 0 12px 28px rgba(25, 55, 80, 0.22);
+}
+.section { margin-top: 8px; }
+.section-heading { padding: 16px; }
+h2 { margin: 0; font-size: 22px; line-height: 1.35; font-weight: 400; }
+.news-item { margin: 0; padding: 0 16px; }
+.news-item + .news-item { margin-top: 4px; }
+.page-header { padding: 28px 16px 10px; border-bottom: 1px solid var(--line); }
+.page-header .name { margin: 0; font-size: 26px; font-weight: 400; }
+.page-content { padding: 28px 16px 20px; }
+.page-content h1 { margin: 0 0 8px; font-size: 28px; font-weight: 400; line-height: 1.3; }
+.site-footer { margin: 30px 16px 0; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+@media (min-width: 601px) {
+  .profile-art { align-self: start; padding: 18px 0 0 18px; }
+}
+@media (max-width: 600px) {
+  .profile { grid-template-columns: 1fr; padding-top: 26px; }
+  .profile-art { grid-row: 1; }
+  .profile-art img { width: min(75vw, 280px); }
+  .profile-copy { padding: 10px 8px; }
+}
